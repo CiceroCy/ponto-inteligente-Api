@@ -17,8 +17,6 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
-import org.hibernate.engine.internal.Cascade;
-
 /**
  * @author Antonio Cicero
  * 03/01/2018

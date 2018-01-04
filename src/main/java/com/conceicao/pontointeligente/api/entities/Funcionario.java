@@ -47,7 +47,7 @@ public class Funcionario implements Serializable{
 	private BigDecimal valorHora;
 	private float qtdHorasTrabalhadas;
 	private float qtdHorasAlmoco;
-	private PerfilEnum ferfil;
+	private PerfilEnum perfil;
 	private Date dataCriacao;
 	private Date dataAtualizacao;
 	private Empresa empresa;
@@ -199,15 +199,15 @@ public class Funcionario implements Serializable{
 	 */
 	@Enumerated(EnumType.STRING)
 	@Column(name = "perfil", nullable = false)
-	public PerfilEnum getFerfil() {
-		return ferfil;
+	public PerfilEnum getPerfil() {
+		return perfil;
 	}
 
 	/**
 	 * @param ferfil the ferfil to set
 	 */
-	public void setFerfil(PerfilEnum ferfil) {
-		this.ferfil = ferfil;
+	public void setPerfil(PerfilEnum perfil) {
+		this.perfil = perfil;
 	}
 
 	/**
@@ -289,7 +289,7 @@ public class Funcionario implements Serializable{
 	public String toString() {
 		return "Funcionario [id=" + id + ", name=" + name + ", email=" + email + ", senha=" + senha + ", cpf=" + cpf
 				+ ", valorHora=" + valorHora + ", qtdHorasTrabalhadas=" + qtdHorasTrabalhadas + ", qtdHorasAlmoco="
-				+ qtdHorasAlmoco + ", ferfil=" + ferfil + ", dataCriacao=" + dataCriacao + ", dataAtualizacao="
+				+ qtdHorasAlmoco + ", ferfil=" + perfil + ", dataCriacao=" + dataCriacao + ", dataAtualizacao="
 				+ dataAtualizacao + ", empresa=" + empresa + ", lancamentos=" + lancamentos + "]";
 	}
 	
