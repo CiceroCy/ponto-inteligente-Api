@@ -25,21 +25,25 @@ public class FuncionarioServiceImpl implements FuncionarioService {
 
 	@Override
 	public Funcionario buscaPorCpf(String cpf) {
+		log.info("Buscando funionario por CPF: {}", cpf);
 		return funcionarioRepository.findByCpf(cpf);
 	}
 
 	@Override
 	public Funcionario buscaPorEmail(String email) {
+		log.info("Buscando funionario por Email: {}", email);
 		return funcionarioRepository.findByEmail(email);
 	}
 
 	@Override
 	public Funcionario buscaPorCpfOuEmail(String cpf, String email) {
+		log.info("Buscando funionario por CPF ou Email: {} {}", cpf, email);
 		return funcionarioRepository.findByCpfOrEmail(cpf, email);
 	}
 
 	@Override
 	public Funcionario persist(Funcionario funcionario) {
+		log.info("Persistindo funionario: {}", funcionario);
 		return funcionarioRepository.save(funcionario);
 	}
 

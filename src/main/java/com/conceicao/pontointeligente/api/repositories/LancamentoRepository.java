@@ -5,7 +5,6 @@ package com.conceicao.pontointeligente.api.repositories;
 
 import java.util.List;
 
-import javax.persistence.NamedNativeQuery;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 

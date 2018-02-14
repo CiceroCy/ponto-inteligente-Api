@@ -6,7 +6,8 @@ package com.conceicao.pontointeligente.api.service;
 import com.conceicao.pontointeligente.api.entities.Funcionario;
 
 /**
- * @author Antonio Cicero 4 de jan de 2018
+ * @author Antonio Cicero 
+ * 4 de jan de 2018
  */
 
 public interface FuncionarioService {
